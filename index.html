@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <h2>INVENTORY</h2>
+                <span>Management System</span>
+            </div>
+
+            <p class="menu-title">MAIN MENU</p>
+
+            <nav>
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="dashboard.html"
+                           target="content-frame"
+                           class="active">
+                            <span class="icon">=</span>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="stock.html" target="content-frame">
+                            <span class="icon">=</span>
+                            List of Stock
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="add-item.html" target="content-frame">
+                            <span class="icon">+</span>
+                            Add Item
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="suppliers.html" target="content-frame">
+                            <span class="icon">=</span>
+                            Suppliers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reports.html" target="content-frame">
+                            <span class="icon">=</span>
+                            Reports
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                Inventory Management
+                <small>System Dashboard</small>
+            </div>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <iframe
+                src="dashboard.html"
+                name="content-frame"
+                class="content-frame"
+                title="Inventory Dashboard">
+            </iframe>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
