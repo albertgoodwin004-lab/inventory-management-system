@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>List of Stock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Inventory Management System</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="stock.html">List of Stock</a>
+      <a href="add-item.html">Add Item</a>
+      <a href="suppliers.html">Suppliers</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+  </header>
+  <main>
+    <h2>List of Stock</h2>
+    <label>Filter by Category:</label>
+    <select>
+      <option>All Items</option>
+      <option>Drinks</option>
+      <option>Food / Groceries</option>
+      <option>Stationery</option>
+      <option>Electronics</option>
+    </select>
+    <br><br>
+    <table>
+      <tr><th>ID</th><th>Item Name</th><th>Category</th><th>Quantity</th><th>Price (MWK)</th><th>Status</th></tr>
+      <tr><td>001</td><td>Coca Cola 500ml</td><td>Drinks</td><td>120</td><td>1,500</td><td>In Stock</td></tr>
+      <tr><td>002</td><td>Sugar 1kg</td><td>Food / Groceries</td><td>45</td><td>3,200</td><td>In Stock</td></tr>
+      <tr><td>003</td><td>Exercise Book</td><td>Stationery</td><td>8</td><td>2,000</td><td>Low Stock</td></tr>
+      <tr><td>004</td><td>Maize Flour 5kg</td><td>Food / Groceries</td><td>0</td><td>6,500</td><td>Out of Stock</td></tr>
+      <tr><td>005</td><td>USB Cable</td><td>Electronics</td><td>25</td><td>4,500</td><td>In Stock</td></tr>
+    </table>
+  </main>
+  <footer><p>Inventory Management System &copy; 2026</p></footer>
+</body>
+</html>
