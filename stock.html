@@ -1,34 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>List of Stock</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-  
-  </header>
-  <main>
-    <h2>List of Stock</h2>
-    <label>Filter by Category:</label>
-    <select>
-      <option>All Items</option>
-      <option>Drinks</option>
-      <option>Food / Groceries</option>
-      <option>Stationery</option>
-      <option>Electronics</option>
-    </select>
-    <br><br>
-    <table>
-      <tr><th>ID</th><th>Item Name</th><th>Category</th><th>Quantity</th><th>Price (MWK)</th><th>Status</th></tr>
-      <tr><td>001</td><td>Coca Cola 500ml</td><td>Drinks</td><td>120</td><td>1,500</td><td>In Stock</td></tr>
-      <tr><td>002</td><td>Sugar 1kg</td><td>Food / Groceries</td><td>45</td><td>3,200</td><td>In Stock</td></tr>
-      <tr><td>003</td><td>Exercise Book</td><td>Stationery</td><td>8</td><td>2,000</td><td>Low Stock</td></tr>
-      <tr><td>004</td><td>Maize Flour 5kg</td><td>Food / Groceries</td><td>0</td><td>6,500</td><td>Out of Stock</td></tr>
-      <tr><td>005</td><td>USB Cable</td><td>Electronics</td><td>25</td><td>4,500</td><td>In Stock</td></tr>
-    </table>
-  </main>
-  <footer><p>Inventory Management System &copy; 2026</p></footer>
-</body>
-</html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>List of Stock | Inventory Management System</title><link href="assets/css/main.css" rel="stylesheet"/><link href="assets/css/stock.css" rel="stylesheet"/><link href="assets/css/index.css" rel="stylesheet"/></head><body class="stock-page"><div class="shell"><aside class="sidebar"><div class="brand"><span class="brand-mark"><svg aria-hidden="true" class="ui-icon large" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="7"></rect><path d="M3 11h18M8 7V4h8v3"></path></svg></span><span><span class="brand-title">INVENTORY</span><br/><span class="brand-subtitle">Management System</span></span></div><p class="menu-title">WORKSPACE</p><nav aria-label="Main navigation"><ul class="nav-links"><li><a data-page="dashboard.html" href="dashboard.html"><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24"><rect height="9" rx="1" width="7" x="3" y="3"></rect><rect height="5" rx="1" width="7" x="14" y="3"></rect><rect height="9" rx="1" width="7" x="14" y="12"></rect><rect height="5" rx="1" width="7" x="3" y="16"></rect></svg><span>Dashboard</span></a></li><li><a aria-current="page" class="active" data-page="stock.html" href="stock.html"><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"></path><path d="M3 8v9l9 5 9-5V8M12 13v9"></path></svg><span>List of Stock</span></a></li><li><a data-page="add-item.html" href="add-item.html"><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg><span>Add Item</span></a></li><li><a data-page="suppliers.html" href="suppliers.html"><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span>Suppliers</span></a></li><li><a data-page="reports.html" href="reports.html"><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24"><path d="M3 3v18h18M7 16v-4M12 16V7M17 16v-6"></path></svg><span>Reports</span></a></li></ul></nav><a aria-label="Log out and return to login page" class="logout-link" href="index.html"><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><path d="m16 17 5-5-5-5M21 12H9"></path></svg><span>Log Out</span></a><div class="sidebar-footer">Inventory Management System<small>Organized inventory workspace</small></div></aside><div class="frame-area"><main class="page-wrap"><header class="page-header"><div><h1>Stock Inventory</h1><p>View the example stock register.</p></div><div class="page-actions"><a class="btn btn-primary" href="add-item.html"><svg aria-hidden="true" class="ui-icon" viewbox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>Add Item</a></div></header><section class="panel"><div class="stock-toolbar"><div class="form-group"><label for="stock-category">Category (preview only)</label><select disabled="disabled" id="stock-category" title="Filtering requires JavaScript or a server"><option value="">All Items</option><option>Drinks</option><option>Food / Groceries</option><option>Stationery</option><option>Electronics</option></select></div><span class="stock-count" id="stock-count">Showing 5 example items</span></div><div class="table-scroll"><table>
+<tr><th>ID</th><th>Item Name</th><th>Category</th><th>Quantity</th><th>Price (MWK)</th><th>Status</th></tr>
+<tr><td>001</td><td>Coca Cola 500ml</td><td>Drinks</td><td>120</td><td>1,500</td><td><span class="badge-status good">In Stock</span></td></tr>
+<tr><td>002</td><td>Sugar 1kg</td><td>Food / Groceries</td><td>45</td><td>3,200</td><td><span class="badge-status good">In Stock</span></td></tr>
+<tr><td>003</td><td>Exercise Book</td><td>Stationery</td><td>8</td><td>2,000</td><td><span class="badge-status low">Low Stock</span></td></tr>
+<tr><td>004</td><td>Maize Flour 5kg</td><td>Food / Groceries</td><td>0</td><td>6,500</td><td><span class="badge-status out">Out of Stock</span></td></tr>
+<tr><td>005</td><td>USB Cable</td><td>Electronics</td><td>25</td><td>4,500</td><td><span class="badge-status good">In Stock</span></td></tr>
+</table></div><p class="helper" style="margin:15px 0 0">These are sample entries, not records from a connected inventory database.</p></section><footer class="footer">Inventory Management System © 2026</footer></main></div></div></body></html>
